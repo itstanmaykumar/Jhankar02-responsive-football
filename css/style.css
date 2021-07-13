@@ -1,0 +1,166 @@
+/*--------------------------
+Utilities & Global Styles
+--------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 100%;
+    padding: 0 10%;
+}
+
+
+
+header{
+    height: 45px;
+    padding: 40px 10%;
+    background: #2D25A0;
+    color: White;
+    text-align: center;
+    font-size: 20px;
+}
+
+/*--------------------------
+Showcase Section Styles
+--------------------------*/
+#showcase{
+    padding-top: 10px;
+    padding-bottom: 85px;
+    background: #2D25A0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.showcase-box{
+    width: 45%;
+}
+.showcase-box h1{
+    font-size: 64px;
+    line-height: 80px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+.btn{
+    width: 170px;
+    height: 45px;
+    padding: 10px 25px ;
+    background: #E02C6D;
+    color: white;
+    font-size: 16px;
+}
+.showcase-box img{
+    width: 100%;
+}
+
+
+
+
+
+/*--------------------------
+Showcase Section Styles
+--------------------------*/
+#players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.player-card{
+    padding: 15px;
+    box-shadow: 0px 0px 40px hsla(0, 0%, 0%, 0.15);
+}
+.player-card img{
+    width: 100%;
+}
+.player-card h2{
+    font-size: 28px;
+    margin: 16px 0 10px 0;
+}
+.player-card p{
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+
+
+
+
+/*--------------------------
+Showcase Section Styles
+--------------------------*/
+#highlight{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.highlight-box{
+    width: 50%;
+}
+#highlight-txt{
+    padding-right: 10%;
+    padding-top: 30px;
+}
+.highlight-box h1{
+    font-size: 30px;
+}
+.highlight-box h3{
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+.highlight-box p{
+    color: #6C6C6C;
+    font-size: 13px;
+    font-weight: 400px;
+    margin: 20px 0 50px 0;
+}
+
+
+
+
+
+/*--------------------------
+Footer Section Styles
+--------------------------*/
+footer{
+    text-align: center;
+    padding: 30px 0;
+    box-shadow: 0px 0px 40px hsla(0, 0%, 0%, 0.15);
+}
+.foo-box{
+    margin: 10px auto 0 auto;
+    width: 30%;
+}
+.foo-box img{
+    width: 100%;
+}
+#social-links{
+    display: flex;
+    justify-content: center;
+}
+#social-links a{
+    margin: 0 7px;
+}
+.foo-box a div{
+    width: 32px;
+    height: 32px;
+    padding: 4px;
+    border-radius: 16px;
+    font-size: 17px;
+    background-color: #e7e7e9;
+    color: #969BAB;
+}
