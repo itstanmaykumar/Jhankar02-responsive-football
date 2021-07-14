@@ -440,8 +440,12 @@ Responsive Styles For Mobiles
         height: auto;
         width: 100%;
     }
+    .article-link .btn{
+        font-size: 8px;
+        padding: 5px 5px;
+    }
     .share{
-        margin-left: 65%;
+        margin-left: 60%;
         color: #969BAB;
     }
 
