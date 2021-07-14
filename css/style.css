@@ -38,6 +38,11 @@ nav{
 #navigation a{
     color: white;
     padding-right: 30px;
+    transition: color .2s ease-in-out;
+}
+/* Navigation Animation */
+#navigation a:hover{
+    color: #E02C6D;
 }
 
 
@@ -53,7 +58,6 @@ Showcase Section Styles
     background: #2D25A0;
     color: white;
     display: flex;
-    justify-content: space-between;
 }
 .showcase-box{
     width: 45%;
@@ -63,17 +67,42 @@ Showcase Section Styles
     line-height: 80px;
     margin-top: 80px;
     margin-bottom: 30px;
+    cursor: default;
 }
 .btn{
     width: 170px;
     height: 45px;
     padding: 10px 25px ;
     background: #E02C6D;
+    border: 2px solid #E02C6D;
     color: white;
     font-size: 16px;
+    overflow: hidden;
+    transition: background 0.5s ease 0s, border 0.5s ease 0s;
+}
+.btn i{
+    transition: margin-left .5s ease-out .2s;
+}
+#showcase-img{
+    margin-left: 10%;
 }
 .showcase-box img{
     width: 100%;
+    transition: transform 0.5s ease 0s;
+}
+/* Showcase Animation */
+#showcase h1 span:hover{
+    color: #E02C6D;
+}
+.showcase-box img:hover{
+    transform: scale(1.1);
+}
+.btn-an:hover{
+    background: transparent;
+    border: 2px solid white;
+}
+.btn-an:hover i{
+    margin-left: 30px;
 }
 
 
@@ -92,6 +121,8 @@ Players Section Styles
 .player-card{
     padding: 15px;
     box-shadow: 0px 0px 40px hsla(0, 0%, 0%, 0.15);
+    cursor: pointer;
+    transition: box-shadow .3s ease-in-out;
 }
 .player-card img{
     width: 100%;
@@ -105,6 +136,10 @@ Players Section Styles
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
+}
+/* Players Animation */
+.player-card:hover{
+    box-shadow: 0px 0px 40px hsla(0, 0%, 0%, 0.5);
 }
 
 
@@ -138,6 +173,11 @@ Highlights Section Styles
     font-weight: 400px;
     margin: 20px 0 50px 0;
 }
+/* Highlight Animation */
+#highlight .btn-an:hover{
+    color: black;
+    border: 2px solid black;
+}
 
 
 
@@ -165,7 +205,7 @@ Fixers Section Styles
     border-radius: 10px;
     opacity: .5;
 }
-.live{
+#live{
     opacity: 1;
 }
 .fixer-box h3{
@@ -198,6 +238,19 @@ Fixers Section Styles
     margin-top: 20px;
     color: #E02C6D;
 }
+/* Fixer Animation */
+#live h3 span{
+    cursor: pointer;
+    animation: live-now .5s ease-in-out 0s infinite alternate;
+}
+@keyframes live-now{
+    from {
+        color: #E02C6D;
+    }
+    to {
+        color: white;
+    }
+}
 
 
 
@@ -225,6 +278,8 @@ News Section Styles
     box-shadow: 0px 0px 40px hsla(0, 0%, 0%, 0.15);
     border-radius: 10px;
     overflow: hidden;
+    transition: box-shadow .3s ease-in-out;
+    cursor: pointer;
 }
 .article-box{
     width: 50%;
@@ -246,13 +301,10 @@ News Section Styles
     line-height: 15px;
     margin: 10px 10px 20px 0;
 }
-.article-box .btn{
-    font-size: 10px;
-    padding: 5px 10px;
-    border-radius: 5px;
-    background: #969BAB;
-    height: 25px;
-    width: 80px;
+.article-box .btnn{
+    font-size: 12px;
+    font-weight: 500;
+    color: #6C6C6C;
 }
 .article-link{
     display: flex;
@@ -264,6 +316,15 @@ News Section Styles
 .share{
     margin-left: 45%;
     color: #969BAB;
+}
+/* News Animation */
+.news-box:hover{
+    box-shadow: 0px 0px 40px hsla(0, 0%, 0%, 0.5);
+}
+.news-box:hover h2,
+.news-box:hover .article-link>a,
+.news-box:hover .fa-share-alt{
+    color: #E02C6D;
 }
 
 
@@ -279,13 +340,15 @@ Sponsor Section Styles
     border-radius: 10px;
     padding: 30px;
     box-shadow: 0px 0px 40px hsla(0, 0%, 0%, 0.15);
-    opacity: .5;
+    transition: box-shadow .5s ease-in-out;
+    cursor: pointer;
 }
 #sponsors h1{
     font-size: 40px;
     font-weight: 500;
     text-align: center;
     margin: 30px 0;
+    opacity: .5;
 }
 #sponsor-container{
     display: grid;
@@ -295,6 +358,16 @@ Sponsor Section Styles
 .sponsor-box img{
     width: 70%;
     margin: 30px 15%;
+    opacity: .5;
+    cursor: pointer;
+    transition: opacity .3s ease-in-out;
+}
+/* Sponsors Animation */
+#sponsors:hover{
+    box-shadow: 0px 0px 40px hsla(0, 0%, 0%, 0.5);
+}
+.sponsor-box img:hover{
+    opacity: 1;
 }
 
 
@@ -325,9 +398,16 @@ footer{
     padding: 7px;
     margin: 0 7px 10px 7px;
     border-radius: 16px;
+    transition: color .3s ease-in-out, background .3s ease-in-out;
+
 }
 .foo-box p{
     font-size: 18px;
+}
+/* Footer Animation */
+.foo-box i:hover{
+    color: white;
+    background: #E02C6D;
 }
 
 
@@ -440,9 +520,8 @@ Responsive Styles For Mobiles
         height: auto;
         width: 100%;
     }
-    .article-link .btn{
+    .article-link .btnn{
         font-size: 8px;
-        padding: 5px 5px;
     }
     .share{
         margin-left: 60%;
@@ -469,4 +548,4 @@ Responsive Styles For Mobiles
 
 
 
-/* I hope you are a wondeful day. */
+/* I hope you are having a wondeful day. */
