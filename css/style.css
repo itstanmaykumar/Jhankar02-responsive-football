@@ -149,13 +149,74 @@ Showcase Section Styles
 
 
 /*--------------------------
+Sponsor Section Styles
+--------------------------*/
+#fixers{
+    padding-top: 50px;
+}
+#fixers h1{
+    margin: 30px 0;
+    font-size: 30px;
+    word-spacing: 15px;
+}
+.fixer-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+}
+.fixer-box{
+    box-shadow: 0px 0px 40px hsla(0, 0%, 0%, 0.15);
+    padding: 20px;
+    border-radius: 10px;
+}
+.fixer-box h3{
+    font-weight: 500;
+    font-size: 15px;
+    margin: 10px 0;
+    opacity: .5;
+    color: #E02C6D;
+}
+#live-now{
+    color: red;
+    opacity: 1;
+}
+.fixer-box h3 i{
+    margin-right: 10px;
+}
+.fixer-box h2{
+    font-weight: 700;
+    margin: 10px 0;
+}
+.fixer-box h2 span{
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0 5px;
+}
+.fixer-box>p{
+    margin: 20px 0 10px 0;
+    font-weight: 400;
+    font-size: 13px;
+}
+.fixer-footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    color: #E02C6D;
+    opacity: .5;
+}
+
+
+
+
+/*--------------------------
 News Section Styles
 --------------------------*/
 #news{
+    padding-top: 80px;
     margin-bottom: 80px;
 }
 #news h1{
-    margin: 20px 0;
+    margin: 30px 0;
     font-size: 30px;
     word-spacing: 15px;
 }
@@ -212,6 +273,7 @@ News Section Styles
 
 
 
+
 /*--------------------------
 Sponsor Section Styles
 --------------------------*/
@@ -221,6 +283,7 @@ Sponsor Section Styles
     border-radius: 10px;
     padding: 30px;
     box-shadow: 0px 0px 40px hsla(0, 0%, 0%, 0.15);
+    opacity: .5;
 }
 #sponsors h1{
     font-size: 40px;
