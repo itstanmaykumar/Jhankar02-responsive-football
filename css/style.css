@@ -163,17 +163,16 @@ Fixers Section Styles
     box-shadow: 0px 0px 40px hsla(0, 0%, 0%, 0.15);
     padding: 20px;
     border-radius: 10px;
+    opacity: .5;
+}
+.live{
+    opacity: 1;
 }
 .fixer-box h3{
     font-weight: 500;
     font-size: 15px;
     margin: 10px 0;
-    opacity: .5;
     color: #E02C6D;
-}
-#live-now{
-    color: red;
-    opacity: 1;
 }
 .fixer-box h3 i{
     margin-right: 10px;
@@ -198,7 +197,6 @@ Fixers Section Styles
     justify-content: space-between;
     margin-top: 20px;
     color: #E02C6D;
-    opacity: .5;
 }
 
 
@@ -419,8 +417,8 @@ Responsive Styles For Mobiles
 
     /* highlight section  */
     iframe{
-        width: 400px;
-        height: 225px;
+        width: 320px;
+        height: 180px;
     }
 
     /* fixer section  */
