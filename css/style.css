@@ -82,14 +82,13 @@ Showcase Section Styles
 
 
 /*--------------------------
-Showcase Section Styles
+Players Section Styles
 --------------------------*/
 #players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
     padding-top: 70px;
-    padding-bottom: 70px;
 }
 .player-card{
     padding: 15px;
@@ -117,7 +116,7 @@ Showcase Section Styles
 Showcase Section Styles
 --------------------------*/
 #highlight{
-    padding-top: 100px;
+    padding-top: 120px;
     padding-bottom: 100px;
     display: flex;
     justify-content: space-between;
@@ -147,9 +146,8 @@ Showcase Section Styles
 
 
 
-
 /*--------------------------
-Sponsor Section Styles
+Fixers Section Styles
 --------------------------*/
 #fixers{
     padding-top: 50px;
@@ -162,7 +160,7 @@ Sponsor Section Styles
 .fixer-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 30px;
+    grid-gap: 30px;
 }
 .fixer-box{
     box-shadow: 0px 0px 40px hsla(0, 0%, 0%, 0.15);
@@ -184,6 +182,7 @@ Sponsor Section Styles
     margin-right: 10px;
 }
 .fixer-box h2{
+    font-size: 20px;
     font-weight: 700;
     margin: 10px 0;
 }
@@ -204,6 +203,7 @@ Sponsor Section Styles
     color: #E02C6D;
     opacity: .5;
 }
+
 
 
 
@@ -273,7 +273,6 @@ News Section Styles
 
 
 
-
 /*--------------------------
 Sponsor Section Styles
 --------------------------*/
@@ -329,4 +328,71 @@ footer{
     padding: 7px;
     margin: 0 7px 10px 7px;
     border-radius: 16px;
+}
+
+
+
+
+
+@media only screen and (max-width: 992px){
+    #nav-section{
+        display: none;
+    }
+
+
+    /* showcase section  */
+    #showcase{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+    .showcase-box{
+        width: 80%;
+    }
+    .showcase-box img{
+        margin-top: 50px;
+        width: 100%;
+    }
+
+
+    /* players section  */
+    #players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* highlight section  */
+    #highlight{
+        flex-direction: column;
+        align-items: center;
+    }
+    .highlight-box{
+        width: 80%;
+    }
+    iframe{
+        padding-top: 50px;
+        height: 350px;
+    }
+
+
+    /* fixer section  */
+    .fixer-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* news section  */
+    #articles{
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+    }
+    .article-box h2{
+        font-size: 20px;
+    }
+    .article-box p{
+        font-size: 14px;
+        line-height: 15px;
+        margin: 10px 10px 20px 0;
+    }
 }
