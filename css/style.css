@@ -35,15 +35,39 @@ nav{
     display: flex;
     justify-content: space-between;
 }
-#navigation a{
+#navigation{
+    display: flex;
+    flex-direction: column;
+}
+.plain-nav{
+    display: block;
+}
+.plain-nav a{
     color: white;
     padding-right: 30px;
     transition: color .2s ease-in-out;
 }
+.ham-nav{
+    display: none;
+}
+.ham-menu{
+    cursor: pointer;
+    position: relative;
+}
+.checkbox{
+    position: absolute;
+    top: 5px;
+    z-index: 1;
+    opacity: 0;
+}
+.ham-menu i{
+    font-size: 30px;
+}
 /* Navigation Animation */
-#navigation a:hover{
+.plain-nav a:hover{
     color: #E02C6D;
 }
+
 
 
 
@@ -423,8 +447,8 @@ Responsive Styles For Tablets
 @media only screen and (max-width: 992px){
 
     /*navigation section*/
-    #nav-section{
-        display: none;
+    .plain-nav a{
+        padding-right: 10px;
     }
 
     /* showcase section  */
@@ -485,6 +509,15 @@ Responsive Styles For Mobiles
 ----------------------------*/
 @media only screen and (max-width: 688px){
 
+    /* navigation section */
+    /* tried hamburger menu on the last moment. couldn't finished it*/ 
+    .ham-nav{
+        display: block;
+    }
+    .plain-nav{
+        display: none;
+    }
+
     /* showcase section  */
     .showcase-box h1{
         font-size: 40px;
@@ -543,8 +576,6 @@ Responsive Styles For Mobiles
         margin: 7px;
     }
 }
-
-
 
 
 
