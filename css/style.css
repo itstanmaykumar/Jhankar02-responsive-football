@@ -510,7 +510,9 @@ Responsive Styles For Mobiles
 @media only screen and (max-width: 688px){
 
     /* navigation section */
-    /* tried hamburger menu on the last moment. couldn't finished it*/ 
+    /* tried hamburger menu on the last moment.
+    couldn't finished it.
+    needed some more time maybe*/ 
     .ham-nav{
         display: block;
     }
