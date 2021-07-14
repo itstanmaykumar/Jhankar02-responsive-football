@@ -1,7 +1,6 @@
 /*--------------------------
 Utilities & Global Styles
 --------------------------*/
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 *{
     margin: 0;
@@ -113,7 +112,7 @@ Players Section Styles
 
 
 /*--------------------------
-Showcase Section Styles
+Highlights Section Styles
 --------------------------*/
 #highlight{
     padding-top: 120px;
@@ -121,10 +120,8 @@ Showcase Section Styles
     display: flex;
     justify-content: space-between;
 }
-.highlight-box{
-    padding-top: 30px;
-}
 #highlight-txt{
+    padding-top: 0px;
     padding-right: 10%;
 }
 .highlight-box h1{
@@ -141,6 +138,7 @@ Showcase Section Styles
     font-weight: 400px;
     margin: 20px 0 50px 0;
 }
+
 
 
 
@@ -338,11 +336,18 @@ footer{
 
 
 
+
+/*----------------------------
+------------------------------
+Responsive Styles For Tablets
+------------------------------
+----------------------------*/
 @media only screen and (max-width: 992px){
+
+    /*navigation section*/
     #nav-section{
         display: none;
     }
-
 
     /* showcase section  */
     #showcase{
@@ -356,25 +361,25 @@ footer{
         width: 100%;
     }
 
-
     /* players section  */
     #players{
         grid-template-columns: repeat(2, 1fr);
     }
-
 
     /* highlight section  */
     #highlight{
         flex-direction: column;
         align-items: center;
     }
-
+    .highlight-box{
+        width: 100%;
+        padding: 25px 0;
+    }
 
     /* fixer section  */
     .fixer-container{
         grid-template-columns: repeat(2, 1fr);
     }
-
 
     /* news section  */
     #articles{
@@ -393,11 +398,14 @@ footer{
 
 
 
-@media only screen and (max-width: 688px){
-    #nav-section{
-        display: none;
-    }
 
+
+/*----------------------------
+------------------------------
+Responsive Styles For Mobiles
+------------------------------
+----------------------------*/
+@media only screen and (max-width: 688px){
 
     /* showcase section  */
     .showcase-box h1{
@@ -409,18 +417,18 @@ footer{
         grid-template-columns: 1fr;
     }
 
-
     /* highlight section  */
-
+    iframe{
+        width: 400px;
+        height: 225px;
+    }
 
     /* fixer section  */
     .fixer-container{
         grid-template-columns: 1fr;
     }
 
-
     /* news section  */
-    
     .news-box{
         flex-direction: column;
         padding-bottom: 20px;
@@ -438,9 +446,13 @@ footer{
         margin-left: 65%;
         color: #969BAB;
     }
+
+    /* sponsors section  */
     #sponsors h1{
         font-size: 15px;
     }
+
+    /* footer section  */
     .foo-box{
         width: 55%;
     }
@@ -450,3 +462,9 @@ footer{
         margin: 7px;
     }
 }
+
+
+
+
+
+/* I hope you are a wondeful day. */
