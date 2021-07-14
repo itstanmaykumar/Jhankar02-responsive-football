@@ -149,6 +149,79 @@ Showcase Section Styles
 
 
 /*--------------------------
+News Section Styles
+--------------------------*/
+#news{
+    margin-bottom: 80px;
+}
+#news h1{
+    margin: 20px 0;
+    font-size: 30px;
+    word-spacing: 15px;
+}
+#articles{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 30px;
+}
+.news-box{
+    display: flex;
+    box-shadow: 0px 0px 40px hsla(0, 0%, 0%, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.article-box{
+    width: 50%;
+}
+.news-box img{
+    width: 100%;
+}
+.article-text{
+    padding: 10px;
+    padding-left: 30px;
+}
+.article-box h2{
+    font-size: 18px;
+}
+.article-box p{
+    font-size: 12px;
+    line-height: 15px;
+    margin: 10px 10px 20px 0;
+}
+.article-box .btn{
+    font-size: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: #969BAB;
+    height: 25px;
+    width: 80px;
+}
+.article-link{
+    display: flex;
+}
+.article-link a{
+    display: block;
+
+}
+.share{
+    margin-left: 45%;
+    color: #969BAB;
+}
+
+
+
+
+
+/*--------------------------
+Footer Section Styles
+--------------------------*/
+
+
+
+
+
+
+/*--------------------------
 Footer Section Styles
 --------------------------*/
 footer{
